@@ -1,15 +1,13 @@
 body {
-
   background-image: url("http://www.freeimageslive.co.uk/image/view/7010/_original");
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading {
   padding-top: -10px;
   text-align: center;
 }
-
 
 h2 {
   font-size: 50px;
@@ -64,12 +62,13 @@ h2 {
   padding: 20px 6px;
 }
 
-.style{
-	color: black;
-	font-weight: 80px;
-	font-style: italic;
-	margin: 20px 55px;
+.style {
+  color: black;
+  font-weight: 80px;
+  font-style: italic;
+  margin: 20px 55px;
 }
-.style1{
-	text-align: center;
+
+.style1 {
+  text-align: center;
 }
