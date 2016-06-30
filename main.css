@@ -56,11 +56,11 @@ h2 {
 }
 
 .buttons {
-  margin: 10px 487px;
+  padding-top: 10px;
 }
 
 .btn1 {
-  padding: 20px 16px;
+  padding: 20px 6px;
 }
 
 .style{
@@ -71,5 +71,4 @@ h2 {
 }
 .style1{
 	text-align: center;
-	
 }
