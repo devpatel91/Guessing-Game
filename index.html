@@ -3,7 +3,12 @@
 
 <head>
   <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src='guessingGame.js'></script>
+
+    
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <title>Guessing Game</title>
 </head>
 
@@ -17,19 +22,18 @@
     <div class="col-md-12 box">
       <form class="form">
 
-
-        <input class="form-control input" placeholder="Input Number 1-100">
-        <h3 class="style1">Hot or Cold</h3>
+         <input id="input" type="text" class="form-control input" placeholder="Enter a number from 1 to 100.">
+        <h3 id ="message" class="style1"></h3>
 
 
       </form>
-      <button type="button" class="btnstyle  btn btn-success-outline">Guess!</button>
+      <button id ="guess" type="button" class="btnstyle btn btn-success-outline">Submit Guess!</button>
 
 
       <div class="buttons">
-        <button type="button" class="btnstyle btn1 btn-success-outline">Play Again</button>
-        <button type="button" class="btnstyle btn1  btn-success-outline">Give me a Hint</button>
-        <h3 class="style">Number of Guess left.</h3>
+        <button  id = "playAgain" type="button" class="btnstyle btn1 btn-success-outline">Play Again</button>
+        <button id = "hint" type="button" class="btnstyle btn1  btn-success-outline">Give me a Hint</button>
+        <h3 id= "guessLeft" class="style"></h3>
       </div>
     </div>
 
