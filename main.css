@@ -1,4 +1,10 @@
+
+@font-face{
+  font-family: AXIS;
+  src: urlc("https://www.dropbox.com/s/pk9q21x6ney3ozu/Axis%20Extrabold.otf?dl=0");
+}
 body {
+  
   background-image: url("http://www.freeimageslive.co.uk/image/view/7010/_original");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +17,7 @@ body {
 
 h2 {
   font-size: 50px;
-  font-family: courier;
+  font-family: AXIS;
   color: black;
 }
 
@@ -23,7 +29,7 @@ h2 {
 }
 
 .form {
-  padding: 20px 50px;
+  padding: 0px 50px;
 }
 
 .form-control {
@@ -36,7 +42,7 @@ h2 {
   height: 55px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .btnstyle {
@@ -44,13 +50,15 @@ h2 {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
-  background-color: black;
-  border-color: gray;
+ /* background-color: black;
+  border-color: gray;*/
+  
 }
 
 .btn {
   margin: 0px 85px;
   padding: 10px 16px;
+  background-color: green;
 }
 
 .buttons {
@@ -60,15 +68,19 @@ h2 {
 
 .btn1 {
   padding: 20px 6px;
+  background-color:  #1a53ff;
 }
 
+.btn2{
+  padding: 20px 6px;
+  background-color: orange;
+}
 .style {
   color: black;
   font-weight: 80px;
   font-style: italic;
-  margin: 20px 55px;
-}
-
-.style1 {
+  margin: 20px auto;
+  padding: -10px auto;
   text-align: center;
 }
+

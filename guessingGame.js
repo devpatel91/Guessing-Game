@@ -1,3 +1,6 @@
+// keypress event is not working. Though I added prevent.default(), still the page refreshes. 
+
+
 $(document).ready(function() {
 
   var guessArr = [];
@@ -6,6 +9,18 @@ $(document).ready(function() {
   var difference = 0;
   var guessInHand = 4;
   var winningNumber = Math.floor((Math.random() * 100) + 1);
+  
+  //keypress event.
+
+  $("#input").keypress(function(event) {
+    event.prevent.default();
+    if (event.which === 13) {
+      
+      $("#guess").click();
+    };
+  });
+
+
   //play again
 
   $("#playAgain").on('click', function() {
@@ -20,15 +35,6 @@ $(document).ready(function() {
 
   });
 
-  //keypress event.
-
-  $("#input").keypress(function(event) {
-
-    if (event.which === 13) {
-      event.prevent.default(event);
-      $("#guess").click();
-    };
-  });
 
   //Submit Guess button
   $("#guess").on('click', function() {
@@ -57,13 +63,13 @@ $(document).ready(function() {
         newDifference = playersGuess - winningNumber;
 
         if (difference <= 5 && newDifference > 0) {
-          $('#message').html("Your guess is Higher & within 5 digits of the winning number");
+          $('#message').html("Your guess is Higher & within 5 digits of the winning number.");
         } else if (difference <= 5 && newDifference < 0) {
-          $('#message').html("Your guess is Lower & within 5 digits than the winning number");
+          $('#message').html("Your guess is Lower & within 5 digits than the winning number.");
         } else if (difference <= 10 && newDifference > 0) {
-          $('#message').html("Your guess is Higher & within 10 digits of the winning number");
+          $('#message').html("Your guess is Higher & within 10 digits of the winning number.");
         } else if (difference <= 10 && newDifference < 0) {
-          $('#message').html("Your guess is Lower & within 10 digits of the winning number");
+          $('#message').html("Your guess is Lower & within 10 digits of the winning number.");
         } else {
           $('#message').html("Your guess is quite far from the winning number");
         }
