@@ -12,9 +12,9 @@ $(document).ready(function() {
   //keypress event.
 
   $("#input").keypress(function(event) {
-    event.prevent.default();
     if (event.which === 13) {
-      $("#guess").click();
+      $("#guess").click().focus();
+      return false;
     };
   });
 
