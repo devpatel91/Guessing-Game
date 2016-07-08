@@ -1,4 +1,3 @@
-// keypress event is not working. Though I added prevent.default(), still the page refreshes. 
 
 
 $(document).ready(function() {
@@ -15,7 +14,6 @@ $(document).ready(function() {
   $("#input").keypress(function(event) {
     event.prevent.default();
     if (event.which === 13) {
-      
       $("#guess").click();
     };
   });
